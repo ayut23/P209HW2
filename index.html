@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Pizza Order Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <form>
+    <fieldset>
+      <legend>Select Pizza Size:</legend>
+      <label for="small">
+        <input type="radio" id="small" name="size" value="small">
+        Small : 7 $
+      </label><br>
+      <label for="medium">
+        <input type="radio" id="medium" name="size" value="medium">
+        Medium : 10 $
+      </label><br>
+      <label for="large">
+        <input type="radio" id="large" name="size" value="large">
+        Large : 14 $
+      </label><br><br>
+    </fieldset>
+    
+    <label for="toppings">Select Toppings:</label>
+    <select id="toppings" name="toppings" required>
+      <option value="none">No Toppings</option>
+      <option value="one">One Topping : 2.0 $</option>
+      <option value="two">Two Toppings : 3.0 $</option>
+    </select><br><br>
+    
+    <input type="submit" value="Submit">
+  </form>
+</body>
+<script src="main.js"></script>
+
+</html>
